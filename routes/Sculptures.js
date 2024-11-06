@@ -1,16 +1,14 @@
 
 
 /* GET Sculptures page. */
-router.get('/', function(req, res, next) {
+
   const sculptures = [
     { name: "The Thinker", height: 182, material: "Bronze" },
     { name: "Venus de Milo", height: 203, material: "Marble" },
     { name: "David", height: 517, material: "Marble" }
   ];
   
-  // Render the sculptures page and pass the sculptures data
-  res.render('sculptures', { title: 'Search Results - Sculptures', results: sculptures });
-});
+ 
 
 module.exports = router;
 
