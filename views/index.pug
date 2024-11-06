@@ -1,12 +1,12 @@
 block content
   h1= Index 
   p Welcome to Index page
-  //Button with onclick attributes to call boost() function
+  // Button with onclick attributes to call boost() function
   button(type="button", class="btn btn-primary", onclick="boost()") press me
 
-  div#boost add in extra 
+  div#boost Add in extra 
 
-  script. 
+  script.
     let value = 0;
     let amt = 3;
     function boost() {
@@ -14,4 +14,6 @@ block content
       value += amt;
       document.getElementById("boost").innerText = `Boosted ${value} by ${amt}`;
     }
-  
+
+  // Add a link to the Sculptures page endpoint
+  a(href='/sculptures') View Sculptures

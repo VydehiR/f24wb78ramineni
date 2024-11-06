@@ -1,17 +1,24 @@
-block content
-  h1= Sculptures 
-  p Welcome to Sculptures page
-  //Button with onclick attributes to call boost() function
-  button(type="button", class="btn btn-primary", onclick="boost()") press me
+doctype html
+html
+  head
+    title Sculptures Search Results
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+    h1 Sculptures Search Results
 
-  div#boost add in extra 
-
-  script. 
-    let value = 0;
-    let amt = 3;
-    function boost() {
-      amt += 1;
-      value += amt;
-      document.getElementById("boost").innerText = `Boosted ${value} by ${amt}`;
-    }
-  
+    .container-fluid
+      .row
+        
+        - 
+          const results = [
+            { sculptures_name: "The Thinker", sculptures_height: 182, material: "Bronze" },
+            { sculptures_name: "Venus de Milo", sculptures_height : 203, material: "Marble" },
+            { sculptures_name: "David", sculptures_height: 517, material: "Marble" }
+          ]
+        
+        each item, index in results
+          .col-sm-2
+            h2 #{item.sculptures_name}
+            p Height : #{item.sculptures_height} years
+            p Material: #{item.material}
+            
