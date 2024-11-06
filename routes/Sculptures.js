@@ -11,7 +11,7 @@ const results = [
 // Route to render the Sculptures page
 router.get('/', (req, res) => {
   res.render('Sculptures', { 
-    title: 'Sculptures', 
+    title: 'Sculptures search results', 
     results: results  
   });
 });
