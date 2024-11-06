@@ -2,16 +2,17 @@ const express = require('express');
 const router = express.Router();
 
 // Sample data for Sculptures
-const Sculptures = [
-    { sculptures_name: "The Thinker", sculptures_height: 182, material: "Bronze" },
-    { sculptures_name: "Venus de Milo", sculptures_height : 203, material: "Marble" },
-    { sculptures_name: "David", sculptures_height: 517, material: "Marble" }
+const results = [
+  { Sculptures_name: "The Thinker", Sculptures_height: "182", Sculptures_material: "Bronze" },
+  { Sculptures_name: "Venus de Milo", Sculptures_height: "203", Sculptures_material: "Marble" },
+  { Sculptures_name: "David", Sculptures_height: "517", Sculptures_material: "Marble" }
 ];
 
+// Route to render the Sculptures page
 router.get('/', (req, res) => {
-  res.render('artifacts', { 
-    title: 'Search Results - Sculptures', 
-    results: Sculptures 
+  res.render('Sculptures', { 
+    title: 'Sculptures', 
+    results: results  
   });
 });
 
