@@ -22,11 +22,11 @@ const artifacts = [
     { name: "David", height: 517, material: "Marble" }
 ];
 
-router.get('/', (req, res) => {
+
   res.render('artifacts', { 
     title: 'Search Results - Artifacts', 
     results: artifacts 
   });
-});
+
 
 module.exports = router;
