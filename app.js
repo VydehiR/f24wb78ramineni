@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var sculpturesRouter = require('./routes/Sculptures'); // Import the Sculptures router
+var gridRouter = require('./routes/grid');
 
 var app = express();
 
