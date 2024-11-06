@@ -1,5 +1,4 @@
 
-var router = express.Router();
 
 /* GET Sculptures page. */
 router.get('/', function(req, res, next) {
@@ -15,7 +14,7 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-const express = require('express');
+
 
 
 // Sample data for artifacts
