@@ -23,10 +23,6 @@ const artifacts = [
 ];
 
 
-  res.render('artifacts', { 
-    title: 'Search Results - Artifacts', 
-    results: artifacts 
-  });
 
 
 module.exports = router;
